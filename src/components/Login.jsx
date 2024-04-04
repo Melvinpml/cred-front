@@ -1,24 +1,48 @@
 import React from 'react'
 import CredNavBar from './CredNavBar'
+import { Link } from 'react-router-dom'
+import { ProgressBar } from 'react-bootstrap';
+import "../styles/login.css"
 
 const Login = () => {
     return (
         <div>
-            <CredNavBar />
+           <CredNavBar />
             <br />
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div className="row h-3">
+                        <div className="row g-3">
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <div class="card mb-3">
-                                    <img height="400" src='https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg' class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <h1 class="card-title"><b>Login</b></h1>
-                                            <input type="text" className="form-control" placeholder='Enter email id' /><br />
-                                            <input type="password" className="form-control" placeholder='Enter your password' /><br />
-                                            <button className="btn btn-success">Login</button>
-                                        </div>
+                                    <div class="card-body">
+                                        <form className="form">
+                                            <h1 className="login-form-heading">User Login</h1>
+                                            <div className="form-group text-start">
+                                                <br />
+                                                <label htmlFor="" className="form-label">Email</label>
+                                                <input
+                                                    type="email"
+                                                    className="form-control"
+                                                    placeholder="Enter email"
+                                                />
+                                            </div>
+                                            <div className="form-group text-start">
+                                                <label htmlFor="" className="form-label">Password</label>
+                                                <br />
+                                                <input
+                                                    type="password"
+                                                    className="form-control"
+                                                    placeholder="Enter password"
+                                                />
+                                            </div>
+                                            <br />
+                                            <button className="btn btn-info">Submit</button>
+                                            {<ProgressBar className="progressbar" animated now={100} />}
+                                            {<span className="row d-flex justify-content-center error-message"></span>}
+                                        </form>
+                                        <Link to="/adminlogin">Admin Login</Link>
+                                    </div>
                                 </div>
 
                             </div>
@@ -26,6 +50,8 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+
+
         </div>
     )
 }
