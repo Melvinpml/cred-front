@@ -25,7 +25,7 @@ const CredNavBar = () => {
                                 <Link class="nav-link" to="/login">Login</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/signup">Register</Link>
+                                <Link class="nav-link" to="/">Register</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="#">About</Link>
