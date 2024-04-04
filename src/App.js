@@ -5,6 +5,7 @@ import SignupUser from './components/SignupUser';
 import Login from './components/Login';
 import AdminLogin from './components/AdminLogin';
 import HomePage from './components/HomePage';
+import AddCard from './components/AddCard';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path='/signup' element = {<SignupUser />} />
           <Route path='/login' element = {<Login />} />
           <Route path='/adminlogin' element = {<AdminLogin/>} />
+
+          <Route path='/addcard' element = {<AddCard />} />
         </Routes>
       </BrowserRouter>
       
