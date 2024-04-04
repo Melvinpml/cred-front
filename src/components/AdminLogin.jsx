@@ -17,7 +17,7 @@ const Login = () => {
                                 <div class="card mb-3">
                                     <div class="card-body">
                                         <form className="form">
-                                            <h1 className="login-form-heading">AdminLogin</h1>
+                                            <h1 className="login-form-heading">Admin Login</h1>
                                             <div className="form-group text-start">
                                                 <br />
                                                 <label htmlFor="" className="form-label">Email</label>

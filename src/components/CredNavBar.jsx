@@ -19,13 +19,13 @@ const CredNavBar = () => {
                         <ul class="navbar-nav">
                             <li class="nav-item">
 
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <Link class="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="/login">Login</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/">Register</Link>
+                                <Link class="nav-link" to="/signup">Register</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="#">About</Link>
